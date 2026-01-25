@@ -1,185 +1,238 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume - Irene Jahzara Almerino</title>
+    <title>Resume</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
+        * {
+            box-sizing: border-box;
         }
 
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            background: #f0f6ff;
+            color: #1f2937;
+        }
+
+        /* Header */
         header {
-            background-color: #333;
+            background: linear-gradient(135deg, #0e1937, #27324b);
             color: white;
-            padding: 10px 0;
+            padding: 40px 20px;
             text-align: center;
         }
 
         header h1 {
             margin: 0;
-            font-size: 2rem;
+            font-size: 2.2rem;
+            font-weight: 600;
         }
 
+        header p {
+            margin-top: 8px;
+            font-weight: 300;
+            opacity: 0.9;
+        }
+
+        .profile-pic {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid rgba(255, 255, 255, 0.8);
+    margin-bottom: 15px;
+}
+
+        /* Navigation */
         nav {
             display: flex;
             justify-content: center;
-            background-color: #444;
+            gap: 20px;
+            background: #111831;
+            padding: 12px;
         }
 
         nav a {
             color: white;
-            padding: 10px 20px;
             text-decoration: none;
-            text-transform: uppercase;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: opacity 0.3s;
         }
 
         nav a:hover {
-            background-color: #575757;
+            opacity: 0.7;
         }
 
+        /* Container */
         .container {
-            padding: 20px;
             max-width: 900px;
-            margin: 20px auto;
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 30px auto;
+            padding: 25px;
+        }
+
+        /* Card Sections */
+        section {
+            background: white;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(37, 99, 235, 0.08);
         }
 
         h2 {
-            border-bottom: 2px solid #333;
-            padding-bottom: 10px;
-            margin-bottom: 10px;
-            font-size: 1.5rem;
-            color: #444;
+            color: #1e40af;
+            margin-bottom: 15px;
+            font-size: 1.4rem;
+            border-left: 5px solid #2563eb;
+            padding-left: 10px;
         }
 
         h4 {
-            font-size: 1.2rem;
-            margin-top: 10px;
-        }
-
-        ul {
-            padding-left: 20px;
-        }
-
-        hr {
-            border: 1px solid #ccc;
-            margin: 20px 0;
+            margin-bottom: 5px;
+            font-weight: 500;
         }
 
         p {
-            margin: 5px 0;
+            margin: 4px 0;
+            font-size: 0.95rem;
         }
 
-        .skills ul {
-            list-style-type: none;
-            padding: 0;
+        /* Skills */
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 10px;
         }
 
-        .skills li {
-            margin-bottom: 5px;
+        .skill {
+            background: #e0ecff;
+            color: #1e3a8a;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 500;
         }
 
+        /* Footer */
         footer {
+            background: #1e3a8a;
+            color: white;
             text-align: center;
             padding: 20px;
-            background-color: #333;
-            color: white;
-            font-size: 0.9rem;
+            font-size: 0.85rem;
+        }
+
+        footer a {
+            color: #bfdbfe;
+            text-decoration: none;
         }
     </style>
 </head>
 
 <body>
-    <!-- Header Section -->
-    <header>
-        <h1>Irene Jahzara Almerino - Resume</h1>
-    </header>
 
-    <!-- Navigation Section -->
-    <nav>
-        <a href="#contact">Contact</a>
-        <a href="#objective">Objective</a>
-        <a href="#education">Education</a>
-        <a href="#skills">Skills</a>
-        <a href="#experience">Experience</a>
-    </nav>
+<header>
+    <h1>Irene Jahzara Almerino</h1>
+    <img src="profileko.jpeg" alt="Profile Photo" class="profile-pic">
+    <p>BSIT Student • Aspiring Web Developer</p>
+</header>
 
-    <!-- Main Content Section -->
-    <div class="container">
-        <!-- Contact Information Section -->
-        <div id="contact">
-            <h2>Contact Information</h2>
-            <h4>Name: Irene Jahzara Almerino</h4>
-            <p>Date of birth: June 21, 2006</p>
-            <p>Email: <a href="mailto:almerinojahzara@gmail.com">almerinojahzara@gmail.com</a></p>
+<nav>
+    <a href="#contact">Contact</a>
+    <a href="#objective">Objective</a>
+    <a href="#education">Education</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+</nav>
+
+<div class="container">
+
+    <section id="contact">
+        <h2>Contact Information</h2>
+        <p><strong>Date of Birth:</strong> June 21, 2006</p>
+        <p><strong>Email:</strong> <a href="mailto:almerinojahzara@gmail.com">almerinojahzara@gmail.com</a></p>
+    </section>
+
+    <section id="objective">
+        <h2>About Me & Objective</h2>
+        <p>
+            Motivated and hardworking IT student seeking opportunities to gain real-world experience in the technology industry. 
+            Eager to apply technical knowledge, adapt quickly to new environments, and contribute positively to team success.
+        </p>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+
+        <h4>University of the Cordilleras</h4>
+        <p>Bachelor of Science in Information Technology</p>
+        <p>2024 – Present</p>
+
+        <br>
+
+        <h4>STI College Baguio</h4>
+        <p>Senior High School – TVL (ICT)</p>
+        <p>2021 – 2024</p>
+
+        <br>
+
+        <h4>Baguio City National High School</h4>
+        <p>Junior High School</p>
+        <p>2018 – 2021</p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+
+        <h4>Interpersonal</h4>
+        <div class="skills-list">
+            <span class="skill">Communication</span>
+            <span class="skill">Teamwork</span>
+            <span class="skill">Time Management</span>
+            <span class="skill">Strong Work Ethics</span>
         </div>
 
-        <!-- Objective Section -->
-        <div id="objective">
-            <h2>About Me & Objective</h2>
-            <p>Motivated and hardworking graduate seeking an entry-level role in Industry to apply strong adaptability and communication abilities, learn quickly, and contribute to team success while developing professionally.</p>
+        <br>
+
+        <h4>Technical</h4>
+        <div class="skills-list">
+            <span class="skill">HTML</span>
+            <span class="skill">CSS</span>
+            <span class="skill">Java</span>
+            <span class="skill">JavaScript</span>
+            <span class="skill">C# (Beginner)</span>
         </div>
 
-        <!-- Education Section -->
-        <div id="education">
-            <h2>Education</h2>
-            <h4>Junior High School:</h4>
-            <p>Baguio City National High School</p>
-            <p>Year: 2018-2021</p>
-            <br>
-            <h4>Senior High School:</h4>
-            <p>STI College: Baguio</p>
-            <p>Year: 2021-2024</p>
-            <br>
-            <h4>College:</h4>
-            <p>University of the Cordilleras</p>
-            <p>Year: 2024-Present</p>
+        <br>
+
+        <h4>Languages</h4>
+        <div class="skills-list">
+            <span class="skill">English</span>
+            <span class="skill">Filipino</span>
+            <span class="skill">Ilocano</span>
         </div>
+    </section>
 
-        <!-- Skills Section -->
-        <div id="skills" class="skills">
-            <h2>Skills</h2>
-            <h4>Interpersonal Skills:</h4>
-            <ul>
-                <li>Excellent communication and collaboration</li>
-                <li>Strong time management skills</li>
-                <li>Demonstrates good work ethics</li>
-            </ul>
+    <section id="experience">
+        <h2>Work Experience</h2>
+        <p>
+            No formal work experience yet. Actively seeking opportunities to gain hands-on industry exposure and grow professionally.
+        </p>
+    </section>
 
-            <h4>Technical Skills:</h4>
-            <ul>
-                <li>Proficient in computers and quick to learn new tools</li>
-                <li>Programming knowledge: HTML, CSS, Java, JavaScript, C# (beginner level)</li>
-            </ul>
+</div>
 
-            <h4>Languages:</h4>
-            <ul>
-                <li>Filipino</li>
-                <li>Ilocano</li>
-                <li>English</li>
-            </ul>
-        </div>
+<footer>
+    <p>📧 <a href="mailto:almerinojahzara@gmail.com">almerinojahzara@gmail.com</a></p>
+</footer>
 
-        <!-- Experience Section -->
-        <div id="experience">
-            <h2>Work Experience</h2>
-            <p>No work experience as of now. Looking forward to gaining professional experience in the near future!</p>
-        </div>
-    </div>
-
-    <!-- Footer Section -->
-    <footer>
-        <p>Contact me at: <a href="mailto:almerinojahzara@gmail.com">almerinojahzara@gmail.com</a></p>
-    </footer>
 </body>
-
 </html>
